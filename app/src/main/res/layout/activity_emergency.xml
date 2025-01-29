@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_test">
+
+    <ImageView
+        android:id="@+id/emergency_image"
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/emergency_call"
+        android:contentDescription="Emergency call icon" />
+
+    <TextView
+        android:id="@+id/emergency_numbers_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergency_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Numery Alarmowe"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/emergency_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergency_numbers_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="112 - Numer Alarmowy\n997 - Policja\n998 - Straż Pożarna\n999 - Pogotowie Ratunkowe\n116 111 - Telefon zaufania\n116 123 - Telefon zaufania dla dorosłych"
+        android:textSize="18sp"
+        android:textColor="@color/teal_200" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context=".EmergencyActivity"
+        android:layout_width="391dp"
+        android:layout_height="350dp"
+        android:layout_below="@id/emergency_numbers"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz swój nastrój:"
+        android:textColor="#00BCD4"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/moodRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/moodHappy"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Szczęśliwy" />
+
+        <RadioButton
+            android:id="@+id/moodNeutral"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Neutralny" />
+
+        <RadioButton
+            android:id="@+id/moodSad"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Smutny" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/moodNote"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Dodaj notatkę (opcjonalnie)" />
+
+    <Button
+        android:id="@+id/saveMoodButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zapisz nastrój"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cofnij"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="bottom" />
+</LinearLayout>
+

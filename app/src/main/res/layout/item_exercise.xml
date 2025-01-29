@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/exerciseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nazwa ćwiczenia"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/exerciseDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opis ćwiczenia"
+        android:textSize="14sp"
+        android:textColor="#AFD6E9"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/exerciseDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Czas trwania: 5 min"
+        android:textSize="14sp"
+        android:textColor="#03A9F4"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/startExerciseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rozpocznij"
+        android:background="@color/buttonGreen"
+        />
+
+
+</LinearLayout>
