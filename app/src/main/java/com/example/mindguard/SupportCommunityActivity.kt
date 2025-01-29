@@ -41,7 +41,7 @@ class SupportCommunityActivity : AppCompatActivity() {
                 Toast.makeText(this, "Wpisz coś, zanim opublikujesz!", Toast.LENGTH_SHORT).show()
             }
         }
-
+git
         loadCommunityPosts()
     }
 
